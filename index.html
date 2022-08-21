@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Better Weigh, Inc</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./css/LOGO.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img src="./css/LOGO.svg" class="logoMobile" style="display:none ;" alt="A Better Weigh, Inc's logo">
+    <nav>
+        <div id="sidebar">
+            <div id="button" class="toggle-btn" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <img src="./css/LOGO.svg" class="logo" alt="A Better Weigh, Inc's logo">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Book Online</a></li>
+                <li><a href="">Weight Loss Programs</a></li>
+                <li><a href="">Real Patient Stories</a></li>
+                <li><a href="">Locations</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Subscription</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="section1">
+        <section>
+            <div class="home">
+                <h1 class="tittle">
+                    Chicago’s <span style="color:#DD71C6">Free</span> Medical Check-Up and Weight Loss Consultation
+                </h1>
+
+                <div class="av">
+                    <h4 class="availableMobile" style="display: none;"> Only <span
+                            style="color:#DD71C6; font-weight: bold;">11</span> spots available!
+                    </h4>
+                </div>
+              
+                <div class="yourOffer">
+                    <div>
+                        <h2>Your offer ends in:</h2>
+
+                        <div class="countDown">
+                            <ul>
+                                <li class="days">DAYS</li>
+                                <li id="days" class="numbers"></li>
+                            </ul>
+                            <ul>
+                                <li class="days">HOURS</li>
+                                <li id="hours" class="numbers"></li>
+                            </ul>
+                            <ul>
+                                <li class="days">MINUTES</li>
+                                <li id="minutes" class="numbers"></li>
+                            </ul>
+                            <ul>
+                                <li class="days">SECONDS</li>
+                                <li id="seconds" class="numbers"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="textDiv">
+                <p class="text">Limited spots available due to the Physicians schedule and the high demand for service.
+                    No
+                    credit card or
+                    insurance required.</p>
+
+                <div class="av">
+                    <h4 class="available"> Only <span style="color:#DD71C6; font-weight: bold;">11</span> spots
+                        available!
+                    </h4>
+                </div>
+                <div class="appointment">
+                    <button class="bookAppointment">Book my appointment</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="backgroundDetails">
+            <svg style="height: 860;">
+                <rect class="yellowRectangle" />
+            </svg>
+        </div>
+
+    </div>
+
+
+    <div id="section2">
+        <section class="reviews">
+            <ul id="grid">
+                <li class="grid1">
+                    <img src="./css/briefcase.svg" class="icons" alt="briefcase">
+                    <h1>10 <span class="plus" style="font-size: 40px; color: #C4C4C4; font-weight: bold;">+</span></h1>
+                    <h2>years in business</h2>
+                </li>
+                <li class="grid2">
+                    <img src="./css/smile.svg" class="icons" alt="smile">
+                    <h1>2000 <span class="plus" style="font-size: 40px; color: #C4C4C4; font-weight: bold;">+</span>
+                    </h1>
+                    <h2>positive reviews</h2>
+                </li>
+                <li class="grid3">
+                    <img src="./css/message-circle.svg" class="icons" alt="message-circle">
+                    <h1>15.000 <span class="plus" style="font-size: 40px; color: #C4C4C4; font-weight: bold;">+</span>
+                    </h1>
+                    <h2>satisfied clients</h2>
+                </li>
+                <li class="grid4">
+                    <img src="./css/activity.svg" class="icons" alt="activity">
+                    <h1>Many <span class="plus" style="font-size: 40px; color: #C4C4C4; font-weight: bold;">+</span>
+                    </h1>
+                    <h2>nurses and physician <br> assistants on staff</h2>
+                </li>
+                <div class="appointment2">
+                    <button class="bookAppointment2">Book my appointment</button>
+                </div>
+            </ul>
+        </section>
+    </div>
+
+
+    <div id="section3">
+        <section class="info">
+            <div id="info">
+                <h1 class="tittle">Who Is The Consultation For?</h1>
+                <p class="text">Chicago’s free medical check-up and weight loss consultation is for Chicago residents
+                    who are looking to lose weight so they can live a long, vibrant and healthy life, while looking good
+                    and not breaking the bank.</p>
+                <h1 class="tittle">How Does It Work?</h1>
+                <p class="text">In this exam a certified nurse or physician will do various tests to check your overall
+                    health level and find which easy-to-do physician-supervised weight loss program will work best for
+                    you.</p>
+                    
+                <button class="bookAppointment3">Book my appointment</button>
+            </div>
+            <div>
+                <img class="whosIsItFor" src="./css/image.png" alt="">
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./script/main.js"></script>
+</body>
+
+</html>

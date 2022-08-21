@@ -1,0 +1,643 @@
+html {
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif !important;
+    line-height: 150%;
+}
+
+p {
+    line-height: 160%;
+}
+
+a {
+    font-size: 14px;
+}
+
+h1,
+h2,
+p,
+li,
+a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #333333;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 36px;
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 29px;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav{
+    padding-left: 50px;
+}
+
+.logo {
+    margin-top: -1.5%;
+}
+
+svg {
+    background-color: #FFD900;
+    position: absolute;
+    width: 22vw;
+    right: 0;
+    top: 0;
+    border-top-left-radius: 50px;
+    z-index: -5;
+}
+
+.yellowRectangle {
+    height: 760px;
+    width: 100vw;
+    fill: #FFD900;
+}
+
+#section1 .tittle {
+    width: 470px;
+    font-size: 45px;
+    margin-bottom: 0%;
+}
+
+#section1 .text {
+    width: 35%;
+    padding: 0%;
+}
+
+.textDiv {
+    width: 92.5%;
+    margin: auto;
+}
+
+button {
+    transition: 0.4s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bookAppointment,
+.bookAppointment2,
+.bookAppointment3 {
+    color: #FFFFFF;
+    height: 40px;
+    width: 215px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+}
+
+.bookAppointment {
+    background-color: #DD71C6;
+    margin: auto;
+}
+
+.bookAppointment2 {
+    background-color: #FFD900;
+}
+
+.bookAppointment3 {
+    background-color: #DD71C6;
+}
+
+.bookAppointment:hover,
+.bookAppointment2:hover,
+.bookAppointment3:hover {
+    background-color: #B12694;
+}
+
+
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 92.5%;
+}
+
+.yourOffer {
+    background-color: rgba(255, 255, 255, 0.597);
+    width: 629px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.yourOffer h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.av {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.available {
+    color: #333333;
+    text-align: center;
+    width: 57.5%;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    margin-top: -7.5%;
+}
+
+
+#section2 {
+    background: #DD71C6;
+    height: 100vh;
+    /* width: 100vw; */
+    left: 0;
+    padding: 0;
+    margin-top: 7%;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews ul {
+    position: absolute;
+    width: 92.5%;
+    margin-top: 7%;
+    margin-bottom: 1.5%;
+}
+
+.reviews li {
+    background-color: #FFFFFF;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    border-radius: 20px;
+    padding-bottom: 2.5%;
+    padding-top: 1%;
+}
+
+.reviews h1 {
+    font-size: 40px;
+}
+
+.reviews h2 {
+    font-size: 18px;
+}
+
+
+.appointment2 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+}
+
+.icons {
+    height: 20%;
+}
+
+
+
+
+#section3 {
+    background: #73C3F4;
+    height: 100vh;
+    /* width: 100vw; */
+    left: 0%;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 95%;
+}
+
+.info .tittle {
+    color: #FFFFFF;
+    width: 100%;
+    font-size: 32px;
+}
+
+.info .text {
+    color: #FFFFFF;
+    width: 50%;
+    font-size: 16px;
+}
+
+.whosIsItFor {
+    height: 95%;
+    margin-left: -30%;
+}
+
+
+
+.countDown {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.countDown ul {
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.countDown li {
+    padding-bottom: 36px;
+}
+
+.days {
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0083D3;
+}
+
+.numbers {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width: 480px) {
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #section1 {
+        margin-top: 5%;
+    }
+
+    #section1 .tittle {
+        text-align: center;
+        margin: auto;
+        width: 281px;
+        font-size: 30px;
+        margin-top: 25%;
+    }
+
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .yourOffer {
+        width: 200px;
+        height: 109px;
+        margin: auto;
+        text-align: center;
+        padding: 36px;
+        padding-bottom: 0px;
+        border-radius: 30px;
+    }
+
+    .yourOffer h2 {
+        font-size: 12px;
+        margin-top: -5%;
+        margin-bottom: 10%;
+    }
+
+    .av {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .available {
+        display: none;
+    }
+
+    .availableMobile {
+        display: block !important;
+        font-weight: normal;
+        margin: auto;
+        width: 281px;
+        font-size: 12px;
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+
+    .countDown ul {
+        gap: 19px;
+        padding: 10px;
+    }
+
+    .countDown li {
+        padding-bottom: 0px;
+    }
+
+    .bookAppointment {
+        margin: auto;
+        text-align: center;
+        margin-bottom: -10%;
+    }
+
+
+
+    #section1 .text {
+        width: 281px;
+        margin: auto;
+        text-align: left;
+        margin-top: 7.5%;
+        padding-bottom: 7.5%;
+    }
+
+    .numbers {
+        font-size: 18px;
+    }
+
+    .days {
+        letter-spacing: 0px;
+        gap: 15px;
+        font-size: 8px;
+    }
+
+    svg {
+        width: 52vw;
+        background-color: #FFD900;
+    }
+
+    .yellowRectangle {
+        height: 100vh;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       /*  height: 60%; */
+        margin: 0;
+        list-style: none;
+    }
+
+    nav ul{
+        height: 80%;
+        width: 50%;
+        padding-left: 20%;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    nav li{
+        padding-left: 5%;
+    }
+    a:hover{
+        color: red;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logoMobile{
+        display: block !important;
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        margin-top: 25px;
+        margin-left: 5%;
+        left: 0;
+    }
+
+    #sidebar .toggle-btn {
+        position: absolute;
+        top: 0px;
+        right: -920px;
+        margin-top: 29px;
+    }
+
+    .toggle-btn span {
+        background: #DD71C6;
+        display: block;
+        width: 25px;
+        height: 1.95px;
+        margin-top: 5.86px;
+        border: 0px;
+        z-index: 150;
+    }
+
+
+    #sidebar {
+        background: #333333ca;
+        display: flex;
+        position: fixed;
+        width: 800px;
+        height: 123vh;
+        top: 0;
+        right: 950px;
+        transition: 1s;
+        z-index: 100;
+    }
+
+    #sidebar a {
+        color: #FFFFFF;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    #section2 {
+        height: 70vh;
+        width: 100vw;
+        margin-top: 10%;
+        left: 0;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .reviews li {
+        width: 134px;
+        height: 100px;
+        padding-top: 43px;
+        padding-bottom: 5px;
+    }
+
+    .reviews h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .reviews h2 {
+        font-size: 12px;
+    }
+
+    .icons {
+        height: 24px;
+        width: 24px;
+    }
+
+    .plus {
+        font-size: 16px !important;
+    }
+
+
+    #grid {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+        gap: 23px;
+        padding: 0;
+    }
+
+    .appointment {
+        margin: auto;
+        text-align: center;
+    }
+
+    .appointment2 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        margin-top: 100%;
+    }
+
+
+
+    #section3 {
+        height: 150vh;
+        width: 100vw;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .info .tittle {
+        color: #FFFFFF;
+        width: 281px;
+        font-size: 24px;
+    }
+
+    .info .text {
+        color: #FFFFFF;
+        width: 281px;
+        font-size: 14px;
+    }
+
+    .bookAppointment3 {
+        margin-top: 28px;
+    }
+
+    .whosIsItFor {
+        height: 363px;
+        width: 322px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 53px;
+    }
+}
+
+/* @media (min-width:801px) {
+
+    .logoMobile{
+        display: block !important;
+        width: 94.97px;
+        height: 53.11px;
+    }
+    .home{
+        flex-direction: column;
+        
+    }
+
+    .tittle{
+        font-size: 36px;
+    }
+
+    .days{
+        font-size: 12px;
+    }
+    
+    .numbers{
+        font-size: 36px;
+    }
+
+    .countDown ul {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .countDown li {
+        padding-bottom: 0px;
+    }
+
+
+    .days {
+        letter-spacing: 2px;
+        gap: 15px;
+        font-size: 8px;
+    }
+
+
+
+    .yourOffer h2{
+        font-size: 16px;
+    }
+
+    .yourOffer .text{
+        font-size: 16px;
+    }
+
+    .yourOffer {
+        width: 394px;
+        height: 223px;
+        gap: 25px;
+        border-radius: 50px;
+        margin: auto;
+    }
+
+    svg{
+        width: 45%;
+        height: 70%;
+        margin-top: 20%;
+    }
+
+    .whosIsItFor {
+        width: 373.43px;
+        height: 482.25px;
+    }
+}    */
