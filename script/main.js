@@ -1,9 +1,9 @@
 function show() {
-  var toggle = document.getElementById('sidebar').classList.toggle('active');
+  document.getElementById('sidebar').classList.toggle('active');
 }
 
 
-var countDownDate = new Date("Aug 23, 2022 15:37:25").getTime();
+var countDownDate = new Date("Aug 25, 2022 15:37:25").getTime();
 
 var x = setInterval(function () {
 

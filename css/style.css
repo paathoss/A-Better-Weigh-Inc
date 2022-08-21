@@ -47,7 +47,7 @@ ul {
     padding-left: 0;
 }
 
-nav{
+nav {
     padding-left: 50px;
 }
 
@@ -81,6 +81,72 @@ svg {
     width: 35%;
     padding: 0%;
 }
+
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 92.5%;
+}
+
+.yourOffer {
+    background-color: rgba(255, 255, 255, 0.597);
+    width: 629px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.yourOffer h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.countDown {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.countDown ul {
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.countDown li {
+    padding-bottom: 36px;
+}
+
+.days {
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0083D3;
+}
+
+.numbers {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+.av {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.available {
+    color: #333333;
+    text-align: center;
+    width: 57.5%;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    margin-top: -7.5%;
+}
+
 
 .textDiv {
     width: 92.5%;
@@ -124,48 +190,9 @@ button {
 
 
 
-.home {
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    width: 92.5%;
-}
-
-.yourOffer {
-    background-color: rgba(255, 255, 255, 0.597);
-    width: 629px;
-    border-radius: 50px;
-    margin: auto;
-}
-
-.yourOffer h2 {
-    font-size: 18px;
-    text-align: center;
-}
-
-
-.av {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: auto;
-}
-
-.available {
-    color: #333333;
-    text-align: center;
-    width: 57.5%;
-    font-weight: 500;
-    font-size: 18px;
-    margin: 0;
-    margin-top: -7.5%;
-}
-
-
 #section2 {
     background: #DD71C6;
     height: 100vh;
-    /* width: 100vw; */
     left: 0;
     padding: 0;
     margin-top: 7%;
@@ -174,6 +201,14 @@ button {
 .reviews {
     display: flex;
     justify-content: space-around;
+}
+
+.reviews h1 {
+    font-size: 40px;
+}
+
+.reviews h2 {
+    font-size: 18px;
 }
 
 .reviews ul {
@@ -193,15 +228,6 @@ button {
     padding-top: 1%;
 }
 
-.reviews h1 {
-    font-size: 40px;
-}
-
-.reviews h2 {
-    font-size: 18px;
-}
-
-
 .appointment2 {
     display: flex;
     justify-content: center;
@@ -216,14 +242,11 @@ button {
 
 
 
-
 #section3 {
     background: #73C3F4;
     height: 100vh;
-    /* width: 100vw; */
     left: 0%;
 }
-
 
 .info {
     display: flex;
@@ -251,37 +274,6 @@ button {
 
 
 
-.countDown {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.countDown ul {
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.countDown li {
-    padding-bottom: 36px;
-}
-
-.days {
-    letter-spacing: 5px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #0083D3;
-}
-
-.numbers {
-    font-size: 50px;
-    font-weight: 600;
-}
-
-
-
-
-
-
 
 @media (min-width:320px) and (max-width: 480px) {
     html {
@@ -294,6 +286,85 @@ button {
         padding: 0;
     }
 
+    a:hover {
+        color: red;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logoMobile {
+        display: block !important;
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        margin-top: 25px;
+        margin-left: 5%;
+        left: 0;
+    }
+
+
+    #sidebar .toggle-btn {
+        position: absolute;
+        top: 0px;
+        right: -920px;
+        margin-top: 29px;
+    }
+
+    .toggle-btn span {
+        background: #DD71C6;
+        display: block;
+        width: 25px;
+        height: 1.95px;
+        margin-top: 5.86px;
+        border: 0px;
+        z-index: 150;
+    }
+
+
+    #sidebar {
+        background: #333333ca;
+        display: flex;
+        position: fixed;
+        width: 800px;
+        height: 123vh;
+        top: 0;
+        right: 950px;
+        transition: 1s;
+        z-index: 100;
+    }
+
+    #sidebar a {
+        color: #FFFFFF;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+
+    nav ul {
+        height: 80%;
+        width: 50%;
+        padding-left: 20%;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    nav li {
+        padding-left: 5%;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        list-style: none;
+    }
+
+
     #section1 {
         margin-top: 5%;
     }
@@ -304,6 +375,14 @@ button {
         width: 281px;
         font-size: 30px;
         margin-top: 25%;
+    }
+
+    #section1 .text {
+        width: 281px;
+        margin: auto;
+        text-align: left;
+        margin-top: 7.5%;
+        padding-bottom: 7.5%;
     }
 
 
@@ -354,23 +433,7 @@ button {
 
     .countDown li {
         padding-bottom: 0px;
-    }
-
-    .bookAppointment {
-        margin: auto;
-        text-align: center;
-        margin-bottom: -10%;
-    }
-
-
-
-    #section1 .text {
-        width: 281px;
-        margin: auto;
-        text-align: left;
-        margin-top: 7.5%;
-        padding-bottom: 7.5%;
-    }
+    } 
 
     .numbers {
         font-size: 18px;
@@ -391,81 +454,13 @@ button {
         height: 100vh;
     }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-       /*  height: 60%; */
-        margin: 0;
-        list-style: none;
-    }
-
-    nav ul{
-        height: 80%;
-        width: 50%;
-        padding-left: 20%;
-        justify-content: space-evenly;
-        padding: 0;
-    }
-
-    nav li{
-        padding-left: 5%;
-    }
-    a:hover{
-        color: red;
-    }
-
-    .logo{
-        display: none;
-    }
-
-    .logoMobile{
-        display: block !important;
-        position: absolute;
-        height: 40px;
-        width: 70px;
-        margin-top: 25px;
-        margin-left: 5%;
-        left: 0;
-    }
-
-    #sidebar .toggle-btn {
-        position: absolute;
-        top: 0px;
-        right: -920px;
-        margin-top: 29px;
-    }
-
-    .toggle-btn span {
-        background: #DD71C6;
-        display: block;
-        width: 25px;
-        height: 1.95px;
-        margin-top: 5.86px;
-        border: 0px;
-        z-index: 150;
+    .bookAppointment {
+        margin: auto;
+        text-align: center;
+        margin-bottom: -10%;
     }
 
 
-    #sidebar {
-        background: #333333ca;
-        display: flex;
-        position: fixed;
-        width: 800px;
-        height: 123vh;
-        top: 0;
-        right: 950px;
-        transition: 1s;
-        z-index: 100;
-    }
-
-    #sidebar a {
-        color: #FFFFFF;
-    }
-
-    #sidebar.active {
-        left: 0;
-    }
 
     #section2 {
         height: 70vh;
@@ -479,13 +474,6 @@ button {
         justify-content: space-around;
     }
 
-    .reviews li {
-        width: 134px;
-        height: 100px;
-        padding-top: 43px;
-        padding-bottom: 5px;
-    }
-
     .reviews h1 {
         font-size: 18px;
         margin: 0;
@@ -493,6 +481,21 @@ button {
 
     .reviews h2 {
         font-size: 12px;
+    }
+
+    .reviews li {
+        width: 134px;
+        height: 100px;
+        padding-top: 43px;
+        padding-bottom: 5px;
+    }
+
+    #grid {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+        gap: 23px;
+        padding: 0;
     }
 
     .icons {
@@ -504,14 +507,6 @@ button {
         font-size: 16px !important;
     }
 
-
-    #grid {
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-columns: auto auto;
-        gap: 23px;
-        padding: 0;
-    }
 
     .appointment {
         margin: auto;
@@ -572,29 +567,75 @@ button {
     }
 }
 
-/* @media (min-width:801px) {
+@media (min-width:320px) and (max-width:720px) and (orientation:landscape) {
+    a {
+        font-size: 10px;
+    }
 
-    .logoMobile{
+    #navBar {
+        display: none;
+    }
+
+    .logoMobile {
         display: block !important;
         width: 94.97px;
         height: 53.11px;
+        margin-top: 10px;
+        margin-left: 5%;
+        left: 0;
     }
-    .home{
+
+    .home {
         flex-direction: column;
-        
     }
 
-    .tittle{
-        font-size: 36px;
+    #section1 .tittle {
+        font-size: 26px;
+        width: 55%;
+        left: 0;
+        padding-bottom: 35px;
     }
 
-    .days{
+    #section1 .text {
         font-size: 12px;
     }
-    
-    .numbers{
-        font-size: 36px;
+
+    .av {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
     }
+
+    .available {
+        display: none;
+    }
+
+    .availableMobile {
+        display: block !important;
+        position: absolute;
+        font-weight: normal;
+        font-size: 10px;
+        margin-top: -20px;
+    }
+
+
+
+    .yourOffer {
+        width: 294px;
+        height: 123px;
+        margin: 0;
+        gap: 25px;
+        border-radius: 50px;
+    }
+
+    .yourOffer h2 {
+        font-size: 12px;
+    }
+
+    .yourOffer .text {
+        font-size: 2px;
+    }
+
 
     .countDown ul {
         gap: 15px;
@@ -605,39 +646,88 @@ button {
         padding-bottom: 0px;
     }
 
+    .numbers {
+        font-size: 26px;
+    }
 
     .days {
         letter-spacing: 2px;
         gap: 15px;
+        font-size: 7px;
+    }
+
+
+
+    svg {
+        width: 45%;
+        height: 70%;
+        margin-top: 7.5%;
+        border-top-left-radius: 60px;
+    }
+
+
+
+    #section2 {
+        height: 70vh;
+        width: 100vw;
+        margin-top: 10%;
+        left: 0;
+    }
+
+    .reviews li {
+        width: 74px;
+        height: 50px;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .reviews h1 {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .reviews h2 {
         font-size: 8px;
     }
 
-
-
-    .yourOffer h2{
-        font-size: 16px;
+    .icons {
+        height: 20px;
+        width: 20px;
     }
 
-    .yourOffer .text{
-        font-size: 16px;
+    .plus {
+        font-size: 12px !important;
     }
 
-    .yourOffer {
-        width: 394px;
-        height: 223px;
-        gap: 25px;
-        border-radius: 50px;
-        margin: auto;
+
+    .bookAppointment,
+    .bookAppointment2,
+    .bookAppointment3 {
+        height: 25px;
+        width: 155px;
+        font-size: 12px;
     }
 
-    svg{
-        width: 45%;
-        height: 70%;
-        margin-top: 20%;
+    .bookAppointment2{
+        margin: -7.5%;
+    }
+
+
+    #section3 {
+        height: 150vh;
+    }
+
+    .info .tittle {
+        width: 60%;
+        font-size: 26px;
+    }
+
+    .info .text {
+        font-size: 12px;
     }
 
     .whosIsItFor {
-        width: 373.43px;
-        height: 482.25px;
+        width: 200.43px;
+        height: 282.25px;
     }
-}    */
+}
